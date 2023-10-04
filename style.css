@@ -1,0 +1,59 @@
+.profile-picture {
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  border-radius: 50%; /* To make it a circle if needed */
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-column {
+  text-align: center;
+}
+
+.left-column img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.left-column h1 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.left-column p {
+  font-size: 18px;
+}
+
+.right-column {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.section p {
+  font-size: 18px;
+}
