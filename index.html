@@ -8,7 +8,7 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="https://media.licdn.com/dms/image/D5603AQHNfD--ZXlWhg/profile-displayphoto-shrink_800_800/0/1685316839423?e=1701907200&v=beta&t=hHi-ozqOQ6k39Jgl3w5fq_MvasQnDe_K1sg3_64po6c"
+      href="img/logo.png"
       id="favicon-svg"
     />
   </head>
@@ -221,10 +221,21 @@
   </body>
 
   <footer>
-    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-    <script
-      src="https://mediafiles.botpress.cloud/d239d6f2-12c6-437f-a784-bc5d0e095aef/webchat/config.js"
-      defer
-    ></script>
+    <script type="text/javascript">
+      (function (d, t) {
+        var v = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        v.onload = function () {
+          window.voiceflow.chat.load({
+            verify: { projectID: "651e13d34c2fe9000714a653" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, "script");
+    </script>
   </footer>
 </html>
